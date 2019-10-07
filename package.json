@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "A sample project setup using typescript, react and bloomer.",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uvwxy/ts-react-bloomer-boilerplate.git"
+  },
   "scripts": {
     "clean": "rimraf dist",
     "init:dist": "mkdirp dist",

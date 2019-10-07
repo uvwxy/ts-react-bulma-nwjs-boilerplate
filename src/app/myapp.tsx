@@ -19,7 +19,7 @@ export class MyApp extends React.Component<{}, MyAppState> {
                         <PanelHeading>Hello World!</PanelHeading>
                         <PanelBlock>
                             <PanelIcon className="fa fa-book" />
-                            <p>RTF: <a href="https://bloomer.js.org/#/documentation/overview/start" target="_blank">here!</a></p>
+                            <p>Please read the <a href="https://bloomer.js.org/#/documentation/overview/start" target="_blank">Documentation</a> ;)</p>
                         </PanelBlock>
                     </Panel>
                 </Container>

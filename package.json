@@ -23,7 +23,7 @@
   },
   "author": "Paul Smith <code@uvwxy.de>",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
     "@types/react": "^16.0.36",
     "@types/react-dom": "^16.0.3",
     "bloomer": "^0.6.5",

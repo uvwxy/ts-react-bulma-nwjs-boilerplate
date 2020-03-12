@@ -14,7 +14,7 @@ export class MyApp extends React.Component<{}, MyAppState> {
                         <Panel.Header>Hello World!</Panel.Header>
                         <Panel.Block>
                             <Panel.Icon className="fa fa-book" />
-                            <p>It works!</p>
+                            <p>It works... :)</p>
                         </Panel.Block>
                     </Panel>
                 </Container>

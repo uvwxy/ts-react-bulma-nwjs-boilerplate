@@ -1,10 +1,5 @@
 import * as React from "react";
-import Panel from "bloomer/lib/components/Panel/Panel";
-import PanelHeading from "bloomer/lib/components/Panel/PanelHeading";
-import PanelBlock from "bloomer/lib/components/Panel/PanelBlock";
-import PanelIcon from "bloomer/lib/components/Panel/PanelIcon";
-import Section from "bloomer/lib/layout/Section";
-import Container from "bloomer/lib/layout/Container";
+import { Panel, Section, Container } from "react-bulma-components";
 
 export interface MyAppState {
 
@@ -16,11 +11,11 @@ export class MyApp extends React.Component<{}, MyAppState> {
             <Section>
                 <Container>
                     <Panel>
-                        <PanelHeading>Hello World!</PanelHeading>
-                        <PanelBlock>
-                            <PanelIcon className="fa fa-book" />
-                            <p>Please read the <a href="https://bloomer.js.org/#/documentation/overview/start" target="_blank">Documentation</a> ;)</p>
-                        </PanelBlock>
+                        <Panel.Header>Hello World!</Panel.Header>
+                        <Panel.Block>
+                            <Panel.Icon className="fa fa-book" />
+                            <p>It works!</p>
+                        </Panel.Block>
                     </Panel>
                 </Container>
             </Section>

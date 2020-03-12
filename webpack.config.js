@@ -39,7 +39,7 @@ module.exports = {
     devtool: "eval",
     devServer: {
         contentBase: "dist/",
-        port: 8081,
+        port: 4444,
         // proxy: {
         //     '/api': {
         //         target: 'http://localhost:8080/api/',
@@ -53,10 +53,10 @@ module.exports = {
             checkSyntacticErrors: true
         }),
         new CopyWebpackPlugin([
-            // {
-            //     from: 'some/path/here',
-            //     to: 'here' // inside dist/
-            // }
+            {
+                from: 'src/package.json',
+                to: 'package.json' // inside dist/
+            }
         ])
     ]
 };

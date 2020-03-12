@@ -1,0 +1,14 @@
+{
+    "main": "index.html",
+    "name": "nw-boilerplate",
+    "window": {
+        "width": 1024,
+        "height": 768,
+        "max_width": 1024,
+        "max_height": 768,
+        "resizable": false,
+        "fullscreen": false,
+        "frame": true,
+        "transparent": false
+    }
+}

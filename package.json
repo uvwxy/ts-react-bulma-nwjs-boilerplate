@@ -21,7 +21,7 @@
     "webpack:app": "webpack -w",
     "build": "npm-run-all clean init webpack:prod",
     "start": "npm-run-all clean init webpack:dev",
-    "dev-app": "npm-run-all webpack:app",
+    "dev-app": "npm-run-all init webpack:app",
     "app": "nwjs dist/"
   },
   "author": "Paul Smith <code@uvwxy.de>",

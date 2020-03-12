@@ -1,6 +1,7 @@
-# ts-react-bloomer-boilerplate
+# Typescript, React, Bulma, NW.JS Boilerplate
 
 This is my current favorite frontend tech stack.
+You can remove the nw.js if you need to ;).
 
 ## Getting started
 
@@ -16,18 +17,9 @@ To build with production settings
 
     npm run build
 
-## THe Stack
+## The Stack
 
-- Typescript `^3.5.3`
-  - TSLint `^5.9.1`
-- React + React DOM `16.2.0`
-  - react-hot-loader `^4.12.7` - so developing is fun ;) (you don't need to refresh the browser)
-- bulma `^0.6.2` - a CSS framework (layout, widgets, components)
-- bloomer `^0.6.5` - React bindings for bulma
-- font-awesome `^4.7.0` - the name speaks for itself
-- Webpack `^4.20.2` - to build everything into something deployable
-  - node-sass `^4.12.0` - to compile sass to css
-  - cssmin `^0.4.3` - to minify the css
+See `package.json`.
 
 ## Project Structure
 

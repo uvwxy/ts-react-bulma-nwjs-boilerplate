@@ -23,7 +23,7 @@ module.exports = {
             },
             {
                 test: /.tsx?$/,
-                loaders: ['ts-loader'],
+                use: 'ts-loader',
                 exclude: /node_modules/,
                 include: /src/
             }
@@ -48,21 +48,21 @@ module.exports = {
         // }
     },
     plugins: [
-        new ForkTsCheckerWebpackPlugin({
-            tslint: true,
-            checkSyntacticErrors: true
+        new ForkTsCheckerWebpackPlugin(),
+        new CopyWebpackPlugin({
+            patterns: [
+                {
+                    from: 'src/package.json',
+                    to: 'package.json' // inside dist/
+                }
+            ]
         }),
-        new CopyWebpackPlugin([
-            {
-                from: 'src/package.json',
-                to: 'package.json' // inside dist/
-            }
-        ]),
         new webpack.DefinePlugin({
             'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'development')
         })
-    ],
-    node: {
-        fs: 'empty'
-    }
+    ]
+    // , //   // https://stackoverflow.com/questions/39249237/node-cannot-find-module-fs-when-using-webpack
+    // node: {
+    //     fs: 'empty'
+    // }
 };

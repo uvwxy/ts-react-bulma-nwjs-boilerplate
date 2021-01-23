@@ -17,7 +17,7 @@
     "init": "npm-run-all init:**",
     "tsc": "tsc",
     "webpack:prod": "NODE_ENV=production webpack -p",
-    "webpack:dev": "webpack-dev-server -w",
+    "webpack:dev": "webpack serve",
     "webpack:app": "webpack -w",
     "build": "npm-run-all clean init webpack:prod",
     "start": "npm-run-all clean init webpack:dev",
